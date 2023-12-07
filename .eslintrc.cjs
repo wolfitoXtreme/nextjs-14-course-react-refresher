@@ -52,7 +52,7 @@ module.exports = {
             position: 'after',
           },
         ],
-        // pathGroupsExcludedImportTypes: ['builtin'],
+        pathGroupsExcludedImportTypes: ['builtin'],
         warnOnUnassignedImports: true,
         alphabetize: {
           order: 'asc',
