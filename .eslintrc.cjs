@@ -8,7 +8,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  plugins: ['react-refresh', 'import'],
+  plugins: ['react-refresh', 'import', '@stylistic'],
   rules: {
     'arrow-parens': ['warn', 'as-needed'],
     'comma-dangle': ['warn', 'always-multiline'],
@@ -75,5 +75,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    '@stylistic/semi': 'warn',
   },
 }

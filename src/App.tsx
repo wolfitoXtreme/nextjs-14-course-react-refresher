@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 import ReactLogo from '@/assets/react.svg?react';
 import ViteLogo from '@/assets/vite.svg?react';
 
-import '@/styles/App.scss'
+import '@/styles/App.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -31,7 +31,18 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
+// type TestType = {
+//   name: string,
+//   age: number
+// }
+// interface TestFunc<P = TestType> {
+//   (props: P): string
+// }
+// const testFunc:TestFunc<TestType> = ({name, age}) => `name: ${name}, age: ${age}`;
+// console.log(testFunc({name: 'Charles', age: 50}));
