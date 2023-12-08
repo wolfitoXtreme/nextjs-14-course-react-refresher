@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import classNames from 'classnames';
 
@@ -7,16 +7,16 @@ import ViteLogo from '@/assets/vite.svg?react';
 
 import styles from '@/styles/App.module.scss';
 
-function App() {
+const App:React.FC =()=> {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <ViteLogo className={styles.logo} title="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <ReactLogo className={classNames(styles.logo, styles.react)} title="React logo" />
         </a>
       </div>
@@ -34,17 +34,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
 export default App;
-
-
-// type TestType = {
-//   name: string,
-//   age: number
-// }
-// interface TestFunc<P = TestType> {
-//   (props: P): string
-// }
-// const testFunc:TestFunc<TestType> = ({name, age}) => `name: ${name}, age: ${age}`;
-// console.log(testFunc({name: 'Charles', age: 50}));

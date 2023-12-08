@@ -6,9 +6,15 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    "plugin:react/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  plugins: ['react-refresh', 'import', '@stylistic'],
+  plugins: ['react', 'react-refresh', 'import', '@stylistic'],
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     'arrow-parens': ['warn', 'as-needed'],
     'comma-dangle': ['warn', 'always-multiline'],
@@ -31,11 +37,11 @@ module.exports = {
             group: 'builtin',
             position: 'before',
           },
-          // {
-          //   pattern: '@/{types,data}{/,}**',
-          //   group: 'internal',
-          //   position: 'before',
-          // },
+          {
+            pattern: '@/{types,data}{/,}**',
+            group: 'internal',
+            position: 'before',
+          },
           {
             pattern: '@/{App,components}{,/}**',
             group: 'parent',
@@ -67,7 +73,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production'
       ? 'error'
       : 'warn',
-    'no-unused-vars': ['warn'],
+    'no-unused-vars': ['off'],
     'multiline-ternary': ['warn', 'always'],
     'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 2,
@@ -76,5 +82,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     '@stylistic/semi': 'warn',
+    "@typescript-eslint/no-unused-vars": ['warn']
   },
 }
