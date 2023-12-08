@@ -81,6 +81,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/jsx-max-props-per-line': [1, { "maximum": { "single": 1, "multi": 2 } }],
     '@stylistic/semi': 'warn',
     "@typescript-eslint/no-unused-vars": ['warn']
   },
