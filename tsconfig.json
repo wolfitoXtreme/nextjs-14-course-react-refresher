@@ -21,10 +21,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/asstes/*": ["./asstes/*"],
-      "@/components/*": ["./app/components/*"],
+      "@/*": ["./src/*"]
     },
   },
   "include": ["src"],
