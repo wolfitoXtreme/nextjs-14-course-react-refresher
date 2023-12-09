@@ -9,7 +9,7 @@ module.exports = {
     "plugin:react/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  plugins: ['react', 'react-refresh', 'import', '@stylistic'],
+  plugins: ['react', 'react-refresh', 'import'],
   settings: {
     react: {
       version: "detect"
@@ -74,15 +74,12 @@ module.exports = {
       ? 'error'
       : 'warn',
     'no-unused-vars': ['off'],
-    'multiline-ternary': ['warn', 'always'],
     'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 2,
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
-    'react/jsx-max-props-per-line': [1, { "maximum": { "single": 1, "multi": 2 } }],
-    '@stylistic/semi': 'warn',
     "@typescript-eslint/no-unused-vars": ['warn']
   },
 }

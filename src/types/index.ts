@@ -2,7 +2,6 @@ export * from './types.ts';
 export * from './interfaces.ts';
 export * from './enums.ts';
 
-
 // sample usage
 // import { SampleAI, SampleBI } from '@/types';
 

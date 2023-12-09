@@ -7,23 +7,20 @@ import ViteLogo from '@/assets/vite.svg?react';
 
 import styles from '@/styles/App.module.scss';
 
-const App:React.FC =()=> {
+const App: React.FC = () => {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev"
-          target="_blank"
-          rel="noreferrer">
-          <ViteLogo className={styles.logo}
-            title="Vite logo" />
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+          <ViteLogo className={styles.logo} title="Vite logo" />
         </a>
-        <a href="https://react.dev"
-          target="_blank"
-          rel="noreferrer">
-          <ReactLogo className={classNames(styles.logo, styles.react)}
-            title="React logo" />
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
+          <ReactLogo
+            className={classNames(styles.logo, styles.react)}
+            title="React logo"
+          />
         </a>
       </div>
       <h1>Vite + React</h1>
