@@ -6,14 +6,14 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    "plugin:react/recommended"
+    'plugin:react/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   plugins: ['react', 'react-refresh', 'import'],
   settings: {
     react: {
-      version: "detect"
-    }
+      version: 'detect',
+    },
   },
   rules: {
     'arrow-parens': ['warn', 'as-needed'],
@@ -67,19 +67,19 @@ module.exports = {
       },
     ],
     indent: ['error', 2],
-    'no-console': process.env.NODE_ENV === 'production'
-      ? 'error'
-      : 'warn',
-    'no-debugger': process.env.NODE_ENV === 'production'
-      ? 'error'
-      : 'warn',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-unused-vars': ['off'],
     'object-curly-spacing': ['warn', 'always'],
+    'padding-line-between-statements': [
+      'warn',
+      { blankLine: 'always', prev: '*', next: 'return' },
+    ],
     'prefer-const': 2,
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
-    "@typescript-eslint/no-unused-vars": ['warn']
+    '@typescript-eslint/no-unused-vars': ['warn'],
   },
-}
+};
