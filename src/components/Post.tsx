@@ -1,16 +1,16 @@
-
 import React from 'react';
 
 import { PostT } from '@/types';
 
 import styles from './Post.module.scss';
 
-const Post:React.FC<PostT> = ({ author, body }) => {
-
-  return(
+const Post: React.FC<PostT> = ({ author, body }) => {
+  return (
     <li className={styles.post}>
-      <p className={styles.author}>{author}</p><br></br>
-      <p className={styles.text}>{body}</p><br></br>
+      <p className={styles.author}>{author}</p>
+      <br></br>
+      <p className={styles.text}>{body}</p>
+      <br></br>
     </li>
   );
 };

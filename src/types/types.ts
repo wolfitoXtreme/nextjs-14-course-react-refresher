@@ -25,6 +25,7 @@ export type NewPostT = {
   // onAuthorChange: (event: InputChangeI) => void,
   // onCancel: (event: React.SyntheticEvent) => void
   onCancel: () => void;
+  onAddPost: (postData: PostT) => void;
 };
 
 export type ModalT = {
