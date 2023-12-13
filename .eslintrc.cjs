@@ -18,7 +18,10 @@ module.exports = {
   rules: {
     'arrow-parens': ['warn', 'as-needed'],
     'comma-dangle': ['warn', 'always-multiline'],
-    'import/newline-after-import': ['warn', { count: 1, exactCount: true }],
+    'import/newline-after-import': [
+      'warn',
+      { count: 1, exactCount: true, considerComments: true },
+    ],
     'import/order': [
       'warn',
       {
