@@ -46,7 +46,12 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: '@/{App,components}{,/}**',
+            pattern: '@/routes/**',
+            group: 'parent',
+            position: 'before',
+          },
+          {
+            pattern: '@/{,/}**',
             group: 'parent',
             position: 'before',
           },
