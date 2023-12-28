@@ -51,12 +51,17 @@ module.exports = {
             position: 'before',
           },
           {
+            pattern: '{./!(*.scss),../**}',
+            group: 'parent',
+            position: 'before',
+          },
+          {
             pattern: '@/{assets,public}/**',
             group: 'parent',
             position: 'before',
           },
           {
-            pattern: '{./,../,@/styles/}**.scss',
+            pattern: '{@/styles/**,./**.module.scss}',
             group: 'index',
             position: 'after',
           },
@@ -76,7 +81,7 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always'],
     'padding-line-between-statements': [
       'warn',
-      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: '*', next: ['return', 'export'] },
     ],
     'prefer-const': 2,
     'react-refresh/only-export-components': [
